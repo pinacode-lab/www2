@@ -2,7 +2,6 @@ _site
 .sass-cache
 .jekyll-metadata
 .DS_Store
-node_modules
 dist
 package-lock.json
 yarn-error.log
