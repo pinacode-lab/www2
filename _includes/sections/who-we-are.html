@@ -5,8 +5,9 @@
     <div class="row align-items-center avatars">
       {% for staff in site.data.staff %}
         <div class="col">
-         <p>{{staff.name}}</p>
-         <p>{{staff.image}}</p>
+        {% include components/avatar.html
+                name=staff.name
+                image=staff.image%}
         </div>
       {% endfor %}
     </div>
