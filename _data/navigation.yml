@@ -1,8 +1,12 @@
-- name: Home
-  link: /
-- name: About
-  link: /about.html
-- name: Blog
-  link: /blog.html
-- name: Staff
-  link: /staff.html
+- name: Our projects
+  link: "#our-project"
+- name: About us
+  link: "#about-us"
+- name: What we do
+  link: "#what-we-do"
+- name: How we do it
+  link: "#how-we-do-it"
+- name: Who We are
+  link: "#who-we-are"
+- name: Contact
+  link: "#contact"
