@@ -1,8 +1,9 @@
 .card {
   background: $white;
-  min-height: 25vh;
-  min-width: 25vh;
+  min-height: 240px;
+  min-width: 240px;
   border-radius: 25px;
   box-shadow: 2px 4px 12px #888888;
-  margin: 16px;
+  margin: 16px 24px;
+  padding: 16px 24px;
 }
