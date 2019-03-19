@@ -1,0 +1,7 @@
+_site
+.sass-cache
+.jekyll-metadata
+.DS_Store
+package-lock.json
+yarn-error.log
+
