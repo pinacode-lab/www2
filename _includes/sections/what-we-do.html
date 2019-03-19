@@ -5,9 +5,13 @@
   </div>
     <div id="technologies" class="d-flex justify-content-center align-items-center">
       {% for technology in site.data.technologies %}
-        <div class="card d-flex flex-column justify-content-around align-items-center">
-          <img src="{{ technology.image | prepend: "/assets/images/"  | absolute_url}}" alt="Pinacodelab Tech" class="tech-image">
-          <p>{{ technology.name | upcase }}</p>
+        <div class="card-tech d-flex flex-column justify-content-around align-items-center">
+          <div>
+            <img src="{{ technology.image | prepend: "/assets/images/"  | absolute_url}}" alt="Pinacodelab Tech" class="tech-image">
+          </div>
+          <div class="tech-title">
+            <p>{{ technology.name | upcase }}</p>
+          </div>
         </div>
       {% endfor %}
     </div>
