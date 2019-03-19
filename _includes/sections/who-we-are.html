@@ -2,7 +2,7 @@
   <div class="wrapper">
     <h1>{{include.info.title}}</h1>
     <p>{{include.info.body}}</p>
-    <div class="row align-items-center avatars">
+    <div class="row align-items-center grow">
       {% for staff in site.data.staff %}
         <div class="col">
         {% include components/avatar.html
