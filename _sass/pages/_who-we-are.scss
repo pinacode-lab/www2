@@ -1,0 +1,10 @@
+#who-we-are{
+  .wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .avatars{
+    flex-grow: 1;
+  }
+}
