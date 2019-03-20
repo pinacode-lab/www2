@@ -1,18 +1,22 @@
-<div class="container d-flex justify-content-center flex-column" id="what-we-do">
-  <div>
-    <h1>{{ include.info.title }}</h1>
-    <p>{{ include.info.body }}</p>
-  </div>
-    <div id="technologies" class="d-flex justify-content-center align-items-center">
-      {% for technology in site.data.technologies %}
-        <div class="card-tech d-flex flex-column justify-content-around align-items-center">
-          <div>
-            <img src="{{ technology.image | prepend: "/assets/images/"  | absolute_url}}" alt="Pinacodelab Tech" class="tech-image">
-          </div>
-          <div class="tech-title">
-            <p>{{ technology.name | upcase }}</p>
-          </div>
+<div class="container" id="what-we-do">
+  <div class="wrapper">
+    <div>
+      <h1>{{ include.info.title }}</h1>
+      <p>{{ include.info.body }}</p>
+    </div>
+      <div id="technologies" class="d-flex justify-content-center align-items-center">
+        <div class="row">
+          {% for technology in site.data.technologies %}
+            <div class="card-tech col">
+              <div>
+                <img src="{{ technology.image | prepend: "/assets/images/"  | absolute_url}}" alt="Pinacodelab Tech" class="tech-image">
+              </div>
+              <div class="tech-title">
+                <p>{{ technology.name | upcase }}</p>
+              </div>
+            </div>
+          {% endfor %}
         </div>
-      {% endfor %}
+      </div>
     </div>
 </div>
