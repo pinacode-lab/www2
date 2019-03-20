@@ -1,13 +1,27 @@
 #what-we-do {
   min-height: 100vh;
-}
-.tech-image {
-  height: 200px;
-  width: 200px;
-}
-.tech-title {
-  p {
-    margin: 16px 0 0 0;
-    letter-spacing: 2px;
+
+  .tech-image {
+    height: 200px;
+    width: 200px;
+  }
+
+  .tech-title {
+    p {
+      margin: 16px 0 0 0;
+      letter-spacing: 2px;
+    }
+  }
+  .card-tech {
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: color, background-color, transform;
+    &:hover {
+      background-color: $persia-green;
+      color: white;
+      transform: scale(1.1);
+    }
   }
 }
+
+
