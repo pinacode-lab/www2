@@ -1,4 +1,4 @@
-<div class="container" id="what-we-do">
+<div class="container">
   <div class="wrapper">
     <div>
       <h1>{{ include.info.title }}</h1>
@@ -7,14 +7,8 @@
       <div id="technologies" class="d-flex justify-content-center align-items-center">
         <div class="row">
           {% for technology in site.data.technologies %}
-            <div class="card-tech col">
-              <div>
-                <img src="{{ technology.image | prepend: "/assets/images/"  | absolute_url}}" alt="Pinacodelab Tech" class="tech-image">
-              </div>
-              <div class="tech-title">
-                <p>{{ technology.name | upcase }}</p>
-              </div>
-            </div>
+            {% include components/card-tech.html
+                    name = technology.name %}
           {% endfor %}
         </div>
       </div>
