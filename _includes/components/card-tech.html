@@ -1,0 +1,8 @@
+<div class="card-tech col">
+  <div>
+    <img src="{{ technology.image | prepend: "/assets/images/"  | absolute_url}}" alt="Pinacodelab Tech" class="tech-image">
+  </div>
+  <div class="tech-title">
+    <p>{{ include.name | upcase }}</p>
+  </div>
+</div>
