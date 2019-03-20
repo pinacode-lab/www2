@@ -5,7 +5,7 @@
       <p>{{ include.info.body }}</p>
     </div>
       <div id="technologies" class="d-flex justify-content-center align-items-center">
-        <div class="row">
+        <div class="row justify-content-center">
           {% for technology in site.data.technologies %}
             {% include components/card-tech.html
                     name = technology.name %}
