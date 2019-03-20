@@ -4,13 +4,14 @@
       <h1>{{ include.info.title }}</h1>
       <p>{{ include.info.body }}</p>
     </div>
-      <div id="technologies" class="d-flex justify-content-center align-items-center">
-        <div class="row justify-content-center">
-          {% for technology in site.data.technologies %}
-            {% include components/card-tech.html
-                    name = technology.name %}
-          {% endfor %}
-        </div>
+    <div class="row justify-content-center">
+      {% for technology in site.data.technologies %}
+      <div class="card-tech col col-lg-4">
+        {% include components/card-tech.html
+                name = technology.name
+                image = technology.image %}
       </div>
+      {% endfor %}
     </div>
+  </div>
 </div>
