@@ -4,9 +4,9 @@
       <h1>{{ include.info.title }}</h1>
       <p>{{ include.info.body }}</p>
     </div>
-    <div class="row justify-content-center">
+    <div class="row align-items-center grow">
       {% for technology in site.data.technologies %}
-      <div class="card-tech col col-lg-4">
+      <div class="col col-md-6 col-lg-3">
         {% include components/card-tech.html
                 name = technology.name
                 image = technology.image %}

@@ -1,7 +1,6 @@
-<div>
-  <img src="{{ include.image | prepend: "/assets/images/"  | absolute_url}}" alt="Pinacodelab Tech" class="tech-image">
+<div class="card-tech">
+  <img src="{{ include.image | prepend: "/assets/images/"  | absolute_url}}" alt="Pinacodelab Tech" >
+  <p>{{ include.name }}</p>
 </div>
-<div>
-  <p class="tech-title">{{ include.name | upcase }}</p>
-</div>
+
 
