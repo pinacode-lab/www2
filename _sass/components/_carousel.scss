@@ -1,7 +1,14 @@
-.img {
-  background: $celtic;
-  height: 100%;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+.carousel{
+  .img {
+    background: $celtic;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  p{
+    font-weight: 400;
+  }
+
 }
+
