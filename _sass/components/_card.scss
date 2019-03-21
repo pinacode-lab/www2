@@ -1,9 +1,32 @@
+$tech-image-size: 200px;
+$card-border-radius: 24px;
+
 .card-tech {
   background: $white;
-  min-height: 240px;
-  min-width: 240px;
-  border-radius: 25px;
-  box-shadow: 2px 4px 12px #888888;
-  margin: 16px 24px;
-  padding: 16px 24px;
+  // min-height: 240px;
+  // min-width: 240px;
+  border-radius: $card-border-radius;
+  box-shadow: $box-shadow;
+  margin: $padding ($padding * 1.5);
+  padding: $padding ($padding * 1.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: color, background-color, transform;
+  &:hover {
+    background-color: $persia-green;
+    color: white;
+    transform: scale(1.1);
+  }
+  .tech-image {
+    height: $tech-image-size;
+    width: $tech-image-size;
+  }
+  .tech-title {
+      margin: $padding 0 0 0;
+      letter-spacing: 2px;
+  }
 }

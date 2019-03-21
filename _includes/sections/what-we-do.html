@@ -1,18 +1,17 @@
-<div class="container d-flex justify-content-center flex-column" id="what-we-do">
-  <div>
-    <h1>{{ include.info.title }}</h1>
-    <p>{{ include.info.body }}</p>
-  </div>
-    <div id="technologies" class="d-flex justify-content-center align-items-center">
+<div class="container">
+  <div class="wrapper">
+    <div>
+      <h1>{{ include.info.title }}</h1>
+      <p>{{ include.info.body }}</p>
+    </div>
+    <div class="row justify-content-center">
       {% for technology in site.data.technologies %}
-        <div class="card-tech d-flex flex-column justify-content-around align-items-center">
-          <div>
-            <img src="{{ technology.image | prepend: "/assets/images/"  | absolute_url}}" alt="Pinacodelab Tech" class="tech-image">
-          </div>
-          <div class="tech-title">
-            <p>{{ technology.name | upcase }}</p>
-          </div>
-        </div>
+      <div class="card-tech col col-lg-4">
+        {% include components/card-tech.html
+                name = technology.name
+                image = technology.image %}
+      </div>
       {% endfor %}
     </div>
+  </div>
 </div>
