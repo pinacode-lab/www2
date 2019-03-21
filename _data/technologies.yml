@@ -1,0 +1,8 @@
+- name: Ruby
+  image: ruby.png
+- name: JavaScript
+  image: js.png
+- name: PostgreSQL
+  image: postgresql.png
+- name: Heroku
+  image: heroku.png
