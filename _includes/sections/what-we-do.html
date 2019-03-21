@@ -1,4 +1,17 @@
 <div class="container">
-  <h1>{{include.info.title}}</h1>
-  <p>{{include.info.body}}</p>
+  <div class="wrapper">
+    <div>
+      <h1>{{ include.info.title }}</h1>
+      <p>{{ include.info.body }}</p>
+    </div>
+    <div class="row align-items-center grow">
+      {% for technology in site.data.technologies %}
+      <div class="col col-md-6 col-lg-3">
+        {% include components/card-tech.html
+                name = technology.name
+                image = technology.image %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
