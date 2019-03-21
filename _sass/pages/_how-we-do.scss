@@ -1,0 +1,29 @@
+#how-we-do-it {
+  svg {
+    padding: $padding;
+  }
+}
+
+// // Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  #how-we-do-it {
+    .pineapples {
+      &>div:not(:first-child) {
+      height: 0;
+      display: none;
+      }
+    }
+  }
+}
+
+// // Small and medium devices (tablets, 768px and up)
+@media (min-width: 576px) and (max-width: 991.98px) {
+  #how-we-do-it {
+    .pineapples {
+      &>div:first-child {
+      height: 0;
+      display: none;
+      }
+    }
+  }
+}
