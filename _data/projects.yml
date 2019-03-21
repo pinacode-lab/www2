@@ -1,0 +1,12 @@
+- name: Flyzer
+  description: Manage the unexpected by finding the best options for you when your flight was delayed or canceled.
+  image: Flyzer3.png
+- name: Freebird
+  description: Connecting artists that are looking for gigs to the people that needs those musicians.
+  image: Freebird2.png
+- name: Wingx
+  description: Find the best private flight that suits your needs.
+  image: Wingx.png
+- name: MartialMeet
+  description: A platform for finding masters of martial arts to teach you whenever you want.
+  image: MartialMeet1.png
