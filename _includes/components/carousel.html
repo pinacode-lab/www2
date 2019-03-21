@@ -1,0 +1,13 @@
+{% if forloop.first %}
+  <div class="carousel-item active">
+{% else %}
+  <div class="carousel-item">
+{% endif %}
+  <div class="col d-flex project-carousel">
+    <div class="project-text">
+      <h1>{{ include.name }}</h1>
+      <p>{{include.description}}</p>
+    </div>
+    <img src="{{ include.image | prepend: "/assets/images/"  | absolute_url}}" alt="PinacodeLab Projects" class="project-image">
+  </div>
+</div>
