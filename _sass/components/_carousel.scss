@@ -1,52 +1,7 @@
-#our-project {
-  .carousel-control-prev-icon {
-    position: relative;
-    right: 180px;
-  }
-  .carousel-control-next-icon {
-    position: relative;
-    left: 180px;
-  }
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    height: 100px;
-    width: 100px;
-    outline: black;
-    background-size: 100%, 100%;
-    background-image: none;
-  }
-
-  .carousel-control-next-icon:after
-  {
-    content: '〉';
-    font-size: 80px;
-    color: $persia-green;
-  }
-
-  .carousel-control-prev-icon:after {
-    content: '〈';
-    font-size: 80px;
-    color: $persia-green;
-  }
-  .project-carousel {
-    color: $black;
-    background: rgba($persia-green, 0.3);
-    margin: $padding;
-    padding-right: 0;
-    width: 70vw;
-    .project-text {
-      h1 {
-        text-shadow: 1px 1px 1px rgba($black, 0.3);
-        color: $white;
-        letter-spacing: 2px;
-        font-size: ($padding * 3);
-      }
-      padding: $padding;
-      min-width: 33%;
-    }
-    .project-image {
-      border: ($padding / 2) solid $white;
-    }
-  }
+.img {
+  background: $celtic;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
