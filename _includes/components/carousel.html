@@ -1,16 +1,13 @@
-<div id="carousel" class="carousel slide h-100" data-ride="carousel" data-interval="3000">
-  <ol class="carousel-indicators">
-    {% for item in include.collection %}
-      <li data-target="#carousel" data-slide-to=" {{ forloop.index0 }}" {% if forloop.first %}class="active" {% endif %}></li>
-    {% endfor %}
-  </ol>
+<div id="carousel" class="carousel slide h-100" data-ride="carousel" data-interval="1000000">
   <div class="carousel-inner h-100">
     {% for item in include.collection %}
-      <div class="carousel-item h-100 {% if forloop.first %}active {% endif %}">
-       <div class="img" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url({{ item.image | prepend: "/assets/images/"  | absolute_url}});"></div>
-        <div class="carousel-caption">
-          <h5 class="text-left">{{ item.name }}</h5>
-          <p class="text-left">{{ item.description }}</p>
+      <div class="carousel-item  h-100 {% if forloop.first %}active {% endif %}">
+        <div class="item">
+         <div class="img" style="background-image: url({{ item.image | prepend: "/assets/images/"  | absolute_url}});"></div>
+          <div class="text-left">
+            <h5>{{ item.name }}</h5>
+            <p>{{ item.description }}</p>
+          </div>
         </div>
       </div>
     {% endfor %}

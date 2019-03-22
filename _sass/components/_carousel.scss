@@ -1,14 +1,18 @@
 .carousel{
-  .img {
-    background: $celtic;
+  .item{
+    // display: flex;
     height: 100%;
+    flex-direction: column;
+    display: flex;
+    padding: $padding;
+    align-items: center;
+  }
+  .img {
+    flex-grow: 1;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    width: 80%;
   }
-  p{
-    font-weight: 400;
-  }
-
 }
 
