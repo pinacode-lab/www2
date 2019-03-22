@@ -1,5 +1,22 @@
-<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link | absolute_url }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-  {% endfor %}
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-crusoe scrolling-navbar">
+  <img src="{{"PINACODELAB-logo.png" | prepend: "/assets/images/"  | absolute_url}}" alt="Pinacodelab Logo" class="navbar-brand img-fluid">
+  <a class="navbar-toggler"  data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav nav-fill w-100">
+      {% assign size = site.data.navigation | size |  divided_by: 2  %}
+      {% for item in site.data.navigation %}
+        <li class="nav-item">
+          <a href="{{ item.link | absolute_url }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+        </li>
+         {% if forloop.index == size %}
+          <li class="nav-item">
+
+          </li>
+        {% endif %}
+      {% endfor %}
+
+    </ul>
+  </div>
 </nav>
