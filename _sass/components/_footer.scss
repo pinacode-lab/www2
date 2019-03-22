@@ -1,0 +1,41 @@
+.footer {
+  background: $crusoe;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+  padding: 0px ($padding*3);
+  color: $white;
+  box-sizing: border-box;
+  padding: $padding;
+}
+
+.footer-links {
+  float: right;
+  a {
+    font-size: 0.75em;
+  }
+}
+
+.copyright {
+  float: left;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  &>* {
+    padding-right: $padding;
+  }
+  p {
+    margin-bottom: 0px;
+    font-size: 0.75em;
+    font-weight: 100;
+  }
+  p:first-child {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  img {
+    height: 100%;
+  }
+}
