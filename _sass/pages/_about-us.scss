@@ -1,13 +1,12 @@
-$svg-size: 300px;
+$img-size: 240px;
 
 #about-us{
   min-height: 0;
   padding: ($padding*4) ($padding*2);
   .info{
-    svg{
-      width: $svg-size;
-      height: 100%;
-      margin-bottom: ($padding*2);
+    img{
+      min-width: $img-size;
+      width: 100%;
     }
     p{
       margin: 0;

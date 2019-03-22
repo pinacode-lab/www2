@@ -1,19 +1,13 @@
 #hero{
   padding: 0;
   .banner{
-    z-index: 10;
+    background-position: bottom;
+    background-size: contain;
     h1{
       text-transform: uppercase;
     }
     p{
       text-transform:lowercase;
     }
-  }
-  svg{
-    height: 90%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }

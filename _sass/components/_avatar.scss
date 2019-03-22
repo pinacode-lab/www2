@@ -1,6 +1,3 @@
-// mobile: 144px
-$size-bg: 192px;
-
 .avatar-wraper{
   display:flex;
   flex-direction: column;
@@ -13,7 +10,5 @@ $size-bg: 192px;
 
 .avatar{
   object-fit:cover;
-  height: $size-bg;
-  width: $size-bg;
   border-radius: 50%;
 }
