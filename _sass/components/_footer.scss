@@ -1,11 +1,11 @@
 .footer {
-  background: $crusoe;
+  background: $navgation-bg-color;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 15vh;
   padding: 0px ($padding*3);
-  color: $white;
+  color: $navgation-font-color;
   box-sizing: border-box;
   padding: $padding;
 }
