@@ -1,9 +1,11 @@
 .navbar-pinecodelab{
-  justify-content: space-between;
   background: $navgation-bg-color;
-  color: $navgation-font-color;
-  min-height: $navbar-size;
   box-shadow:$box-shadow;
+  color: $navgation-font-color;
+  justify-content: space-between;
+  min-height: $navbar-size;
+  transition: all .5s;
+  font-size: 0.75em;
 
  .navbar-brand{
     width: 40px;
@@ -25,8 +27,9 @@
 .navbar-transparent{
   background: none;
   box-shadow: none;
+  font-size: .85em;
 
   .navbar-brand{
-    display: none;
+    height: 0;
   }
 }

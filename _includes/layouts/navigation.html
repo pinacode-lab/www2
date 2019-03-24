@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top navbar-expand-sm navbar-light navbar-pinecodelab navbar-transparent">
+<nav class="navbar fixed-top navbar-expand-sm navbar-light  d-none d-sm-block navbar-pinecodelab navbar-transparent">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -10,7 +10,7 @@
           <a href="{{ item.link | absolute_url }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
         </li>
          {% if forloop.index == size %}
-          <li class="nav-item d-none d-sm-block">
+          <li class="nav-item ">
              <img src="{{"logo.png" | prepend: "/assets/images/"  | absolute_url}}" alt="Pinacodelab Logo" class="navbar-brand">
           </li>
         {% endif %}
