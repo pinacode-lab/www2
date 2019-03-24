@@ -4,7 +4,7 @@
     <p>{{include.info.body}}</p>
     <div class="row align-items-center grow pineapples">
       {% for index in (1..3) %}
-        <div class="col">
+        <div class="col" data-aos="fade-right" data-aos-duration="{{ forloop.index | times: 200 }}">
           <img src="{{ include.info.image | prepend: "/assets/images/"  | absolute_url}}" alt="Pineapple process">
         </div>
       {% endfor %}
