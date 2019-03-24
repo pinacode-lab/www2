@@ -1,0 +1,32 @@
+.navbar-pinecodelab{
+  justify-content: space-between;
+  background: $navgation-bg-color;
+  color: $navgation-font-color;
+  min-height: $navbar-size;
+  box-shadow:$box-shadow;
+
+ .navbar-brand{
+    width: 40px;
+  }
+
+  .navbar-nav {
+    flex-grow: 1;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.navbar-transparent{
+  background: none;
+  box-shadow: none;
+
+  .navbar-brand{
+    display: none;
+  }
+}
