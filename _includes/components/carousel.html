@@ -3,7 +3,7 @@
     {% for item in include.collection %}
       <div class="carousel-item  h-100 {% if forloop.first %}active {% endif %}">
         <div class="item">
-         <div class="img" style="background-image: url({{ item.image | prepend: "/assets/images/"  | absolute_url}});"></div>
+         <img class="img" src="{{ item.image | prepend: "/assets/images/"  | absolute_url}}"/>
           <div class="text-left">
             <h5>{{ item.name }}</h5>
             <p>{{ item.description }}</p>
