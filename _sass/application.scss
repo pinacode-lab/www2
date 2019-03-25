@@ -5,9 +5,10 @@
 @import "config/bootstrap_variables";
 
 // External libraries
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "vendor/bootstrap/bootstrap";
 
 // Your CSS partials
 @import "components/index";
 @import "layouts/index";
 @import "pages/index";
+

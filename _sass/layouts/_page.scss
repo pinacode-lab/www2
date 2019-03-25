@@ -1,14 +1,24 @@
-$light-theme-bg-color: $clear-day;
-$dark-theme-bg-color: $persia-green;
-$dark-theme-font-color: $white;
+html{
+  scroll-behavior: smooth;
+}
+
+p{
+  font-weight: 300;
+}
+
+h1{
+  margin-bottom: $padding/2;
+}
+
 
 section{
   align-items: stretch;
   display: flex;
   min-height: 100vh;
-  padding: $padding*2;
+  padding: ($navbar-size+15) 0;
   position: relative;
   word-wrap: break-word;
+  box-sizing: border-box;
 
   &:nth-child(odd) {
     background: $light-theme-bg-color;
@@ -17,14 +27,6 @@ section{
   &:nth-child(even) {
     background: $dark-theme-bg-color;
     color: $dark-theme-font-color;
-  }
-
-  p{
-    font-weight: 100;
-  }
-
-  h1{
-    margin-bottom: $padding*1.5;
   }
 
   .wrapper{
@@ -37,3 +39,10 @@ section{
     }
   }
 }
+
+@media (max-width: 575.98px) {
+  section{
+    padding: $padding*2 0;
+  }
+}
+

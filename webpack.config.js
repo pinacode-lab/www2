@@ -7,5 +7,16 @@ module.exports = {
     path: path.resolve(__dirname, "assets/javascripts"),
     filename: "main.js"
   },
-  devtool: "sourcemap"
+  devtool: "sourcemap",
+   module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" }
+        ]
+      }
+    ]
+  }
 };

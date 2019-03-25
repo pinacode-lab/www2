@@ -1,8 +1,8 @@
 - name: Ruby
-  image: ruby.png
+  image: ruby.svg
 - name: JavaScript
-  image: js.png
+  image: javascript.svg
 - name: PostgreSQL
-  image: postgresql.png
+  image: postgresql.svg
 - name: Heroku
-  image: heroku.png
+  image: heroku.svg

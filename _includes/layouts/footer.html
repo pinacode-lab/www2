@@ -1,0 +1,19 @@
+<div class="footer">
+  <div class="copyright">
+
+    <img src="{{"logo.png" | prepend: "/assets/images/"  | absolute_url}}" alt="Pinacodelab Logo" class="">
+
+    <div>
+      <p>Always Look On The Bright Side Of Life</p>
+      <p>Religion And Science</p>
+    </div>
+  </div>
+
+  <ul class="footer-links list-inline d-none d-xl-block">
+    {% for item in site.data.navigation %}
+    <li class="list-inline-item">
+      <a href="{{ item.link | absolute_url }}">{{ item.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

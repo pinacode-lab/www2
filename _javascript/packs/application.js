@@ -1,8 +1,7 @@
 import 'bootstrap';
-import { initSweetalert } from '../components/init_sweetalert';
+import { initAOS } from '../components/init_aos';
+import { initUpdateNavbarOnScroll } from '../components/navbar';
 
-initSweetalert('#sweet-alert-demo', {
-  title: "A nice alert",
-  text: "This is a great alert, isn't it?",
-  icon: "success"
-});
+
+initUpdateNavbarOnScroll();
+initAOS();
