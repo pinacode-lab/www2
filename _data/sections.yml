@@ -1,9 +1,9 @@
 - name: hero
-  title: If life gives you pineapples, make a PinacodeLab.
+  title: If life gives you pineapples, make a PinacodeLab
   body:  Turn your digital pineapples into a solution cocktail.
   image: banner.svg
 - name: our-project
-  title: Our Projects
+  title: Our projects
 - name: about-us
   title: About us
   body: A group of curious and creative developers that gathered their knowledge and experiences to find practical solutions for complex problems. PinaCode Lab is a company with its main focus being generating value to our customers, using a formula of delivering tailored results through features.
