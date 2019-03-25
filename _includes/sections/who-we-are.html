@@ -4,7 +4,7 @@
     <p>{{include.info.body}}</p>
     <div class="row align-items-center grow">
       {% for staff in site.data.staff %}
-        <div class="col">
+        <div class="col" data-aos="zoom-in" data-aos-duration="{{ forloop.index | times: 200 }}">
         {% include components/avatar.html
                 name=staff.name
                 image=staff.image%}

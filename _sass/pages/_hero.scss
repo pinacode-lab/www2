@@ -3,6 +3,9 @@
   .banner{
     background-position: bottom;
     background-size: contain;
+    &>*{
+      animation: fadein 3s;
+    }
     h1{
       text-transform: uppercase;
     }
@@ -11,3 +14,13 @@
     }
   }
 }
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
