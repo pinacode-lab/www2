@@ -1,4 +1,8 @@
 <div class="container">
-  <h1>{{include.info.title}}</h1>
-  <p>{{include.info.body}}</p>
+  <div class="wrapper">
+    <h1>{{ include.info.title }}</h1>
+    <div class="grow">
+      {% include components/carousel.html collection = site.data.projects %}
+    </div>
+  </div>
 </div>
