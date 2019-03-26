@@ -17,9 +17,13 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    {% include layouts/navigation.html %}
+    {% if page.url != "/404.html" %}
+      {% include layouts/navigation.html %}
+    {% endif %}
     {{ content }}
-    {% include layouts/footer.html %}
+    {% if page.url != "/404.html" %}
+      {% include layouts/footer.html %}
+    {% endif %}
 
      <script src="
     {{ "/assets/javascripts/main.js" | absolute_url }}"></script>
