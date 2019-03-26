@@ -1,3 +1,8 @@
+title: PinacodeLab
+email: pinacodelab@gmail.com
+description: PinacodeLab offers solutions for your digital problems. We develop websites and platforms using cutting edge technologies. Our main goal is to deliver value for your business and save you time.
+baseurl: ""
+url: "https://pinacodelab.com"
 collections:
   authors:
     output: true
