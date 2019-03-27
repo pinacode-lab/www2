@@ -11,7 +11,9 @@
         </li>
          {% if forloop.index == size %}
           <li class="nav-item ">
-             <embed src="{{"PINACODELAB.svg" | prepend: "/assets/images/"  | absolute_url}}" alt="Pinacodelab Logo" class="navbar-brand">
+            <a href="#hero" class="navbar-brand">
+              <img src="{{"PINACODELAB.svg" | prepend: "/assets/images/"  | absolute_url}}" alt="Pinacodelab Logo">
+            </a>
           </li>
         {% endif %}
       {% endfor %}
